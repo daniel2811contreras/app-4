@@ -1,0 +1,1 @@
+export const controlError = err => console.log(); 
