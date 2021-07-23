@@ -3,6 +3,8 @@ import {
     Switch,
     Route
  } from 'react-router-dom'
+ import { ToastContainer } from 'react-toastify'
+ import 'react-toastify/dist/ReactToastify.css'
 // component
  import PrivateRoute from './utils/privateRuoter'
  import Home from './home'
@@ -23,6 +25,7 @@ const Navigation = () => {
                 <Route path='/403' component={Error403} />
                 <Route path='*' component={Error404} />
             </Switch>
+            <ToastContainer />
         </Router>
      )
 } 
